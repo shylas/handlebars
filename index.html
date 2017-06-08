@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>Handlebars Table and Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Name List</h1> 
+    </header>
+    
+    <button type="button" id="addName">Add New Name</button>
+    
+    <div id="mainTable">
+      
+    </div>
+      
+    <script id="nameForm" type="text/x-handlebars-template">
+    <form>
+      <fieldset>
+        <label>{{label}}</label>
+        <input type="text" id="input"/>
+        <button type="button" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </script>
+    
+    <script id="nameTable" type="text/x-handlebars-template">
+      <table>
+        <thead>
+          <tr><th>{{col}}</th></tr>
+        </thead>
+        
+        <tbody>
+          {{{row}}}
+        </tbody>
+      </table>
+    </script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
